@@ -60,7 +60,7 @@ void bfs(node* root) {
     queue q; init_queue(&q);
     enqueue(&q, root);
 
-    // Iterasi per "level" tree
+    // Iterasi per level tree
     for(int curLevel = 0; queue_isEmpty(&q) == false; curLevel++) {
         int len = queueSize(&q); // Banyak antrian saat ini
         
